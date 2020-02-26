@@ -77,7 +77,7 @@ namespace CsharpPatternMatchingCheckpoint
             student switch
             {
                 var (g,t) when (g=='A' || g=='B' || g=='C') && t =>true,
-                _ => false,
+                _ => false
             };
         }
 
