@@ -76,9 +76,7 @@ namespace CsharpPatternMatchingCheckpoint
             public static bool getPassOrFail_ByPositionalPatternMatching(Student student) =>
             student switch
             {
-                var (g,t) when g=='A' && t =>true,
-                var (g, t) when g == 'B' && t => true,
-                var (g, t) when g == 'C' && t => true,
+                var (g,t) when (g=='A' || g=='B' || g=='C') && t =>true,
                 _ => false,
             };
         }
